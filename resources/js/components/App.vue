@@ -1,17 +1,23 @@
 <template>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <div class="card">
-          <div class="card-header">ERROR</div>
-
-          <div class="card-body">SITO IN COSTRUZIONE</div>
-        </div>
+  <div>
+    <header></header>
+    <main>
+      <div class="container">
+        <PostsList />
       </div>
-    </div>
+    </main>
   </div>
 </template>
 
 <script>
-name: "App";
+import PostsList from "./posts/PostsList.vue";
+export default {
+  name: "App",
+  components: {
+    PostsList,
+  },
+};
 </script>
+
+<style>
+</style>
