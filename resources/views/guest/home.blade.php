@@ -65,10 +65,11 @@
 
         {{-- Scripts --}}
         <script src="{{asset('js/front.js')}}" defer></script>
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div >
             {{-- @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -83,7 +84,7 @@
                 </div>
             @endif --}}
 
-            <div class="content">
+            <div class="my-content">
                 
                 <div id="root">
 

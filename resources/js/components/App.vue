@@ -1,20 +1,23 @@
 <template>
   <div>
-    <header></header>
+    <Header />
     <main>
-      <div class="container">
+      <!-- <div class="container">
         <PostsList />
-      </div>
+      </div> -->
+      <router-view></router-view>
     </main>
   </div>
 </template>
 
 <script>
+import Header from "./Header.vue";
 import PostsList from "./posts/PostsList.vue";
 export default {
   name: "App",
   components: {
     PostsList,
+    Header,
   },
 };
 </script>

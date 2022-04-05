@@ -21,3 +21,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 // tutte le rotte in api.php hanno il prefisso /api
 Route::get('/posts', 'Api\PostController@index');
+Route::get('/posts/{id}', 'Api\PostController@show');
